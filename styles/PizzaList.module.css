@@ -1,0 +1,47 @@
+.container {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.desc {
+  font-size: 24px;
+  color: #444;
+  width: 70%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pizzacard_container {
+  width: 22%;
+  cursor: pointer;
+  display: flex;
+  padding: 20px 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Pizzacard_title {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary_clr);
+}
+
+.Pizzacard_price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.Pizzacard_desc {
+  text-align: center;
+  color: #777;
+}

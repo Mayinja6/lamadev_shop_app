@@ -1,4 +1,5 @@
 .container {
+  z-index: 1000;
   height: 100px;
   padding: 0 50px;
   background: var(--primary_clr);
