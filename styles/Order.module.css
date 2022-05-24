@@ -7,42 +7,25 @@
   flex: 2;
 }
 
-.right {
-  flex: 1;
-}
-
-.imgContainer {
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
-
 .table {
   width: 100%;
-  border-spacing: 20px;
+  text-align: left;
+  margin-bottom: 50px;
 }
 
-.name {
-  font-weight: 500;
-  color: var(--primary_clr);
-  font-size: 18px;
-}
-
-.total {
-  font-weight: 500;
-  font-size: 18px;
+.right {
+  flex: 1;
 }
 
 .wrapper {
   width: 90%;
   max-height: 300px;
   background-color: #333;
-  padding: 50px;
-  padding-top: 10px;
+  color: white;
+  padding: 10px 50px 50px 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--white_clr);
 }
 
 .totalTextTitle {
@@ -50,9 +33,10 @@
 }
 
 .button {
+  background-color: white;
   height: 30px;
-  color: var(--primary_clr);
+  color: teal;
   font-weight: bold;
-  cursor: pointer;
   margin-top: 20px;
+  cursor: not-allowed;
 }
