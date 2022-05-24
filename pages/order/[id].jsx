@@ -2,9 +2,75 @@ import styles from "../../styles/Order.module.css";
 import Image from "next/image";
 
 const Order = () => {
+  const status = 0;
+
+  const statusClass = (index) => {
+    if (index - status < 1) return styles.done;
+    if (index - status === 1) return styles.inProgress;
+    if (index - status > 1) return styles.undone;
+  };
+
   return (
     <div className={styles.container}>
-      <div className={styles.left}></div>
+      <div className={styles.left}>
+        <div className={styles.row}>
+          <table className={styles.table}>
+            <tr className={styles.tr}>
+              <th>Order ID</th>
+              <th>Customer</th>
+              <th>Address</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>
+                <span className={styles.id}>0897654896</span>
+              </td>
+              <td>
+                <span className={styles.name}>John Doe</span>
+              </td>
+              <td>
+                <span className={styles.address}>Elton st. 213-33 LA</span>
+              </td>
+              <td>
+                <span className={styles.total}>$38.40</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div className={styles.row}>
+          <div className={statusClass(0)}>
+            <Image src="/img/paid.png" width={30} height={30} alt="" />
+            <span>Payment</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+
+          <div className={statusClass(1)}>
+            <Image src="/img/bake.png" width={30} height={30} alt="" />
+            <span>Preparing</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+
+          <div className={statusClass(2)}>
+            <Image src="/img/bike.png" width={30} height={30} alt="" />
+            <span>On The Way</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+
+          <div className={statusClass(3)}>
+            <Image src="/img/delivered.png" width={30} height={30} alt="" />
+            <span>Delivered</span>
+            <div className={styles.checkedIcon}>
+              <Image src="/img/checked.png" width={20} height={20} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
       <div className={styles.right}>
         <div className={styles.wrapper}>
           <h2 className={styles.title}>CART TOTAL</h2>
