@@ -80,3 +80,63 @@
   margin-top: 20px;
   cursor: not-allowed;
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .trTitle {
+    display: none;
+  }
+
+  .tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  .id::before {
+    content: "OrderID: ";
+    font-weight: 500;
+  }
+
+  .name::before {
+    content: "Customer: ";
+    font-weight: 500;
+  }
+
+  .address::before {
+    content: "Address: ";
+    font-weight: 500;
+  }
+
+  .total::before {
+    content: "Total: ";
+    font-weight: 500;
+  }
+
+  .wrapper {
+    padding-top: 40px;
+    width: 100%;
+  }
+
+  .row:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .done,
+  .undone,
+  .inProgress {
+    margin-bottom: 25px;
+  }
+}
