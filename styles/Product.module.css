@@ -29,6 +29,10 @@
   border-bottom: 1px solid var(--primary_clr);
 }
 
+.desc {
+  margin-top: 10px;
+}
+
 .sizes {
   width: 40%;
   display: flex;
@@ -102,4 +106,35 @@
   cursor: pointer;
   padding: 0 10px;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    height: auto;
+    margin-top: 25px;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .imgContainer {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .sizes {
+    margin: 25px auto;
+    width: 80%;
+  }
+
+  .ingredients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+
+  .option {
+    margin: 8px auto;
+  }
 }

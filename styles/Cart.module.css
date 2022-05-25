@@ -11,12 +11,6 @@
   flex: 1;
 }
 
-.imgContainer {
-  width: 100px;
-  height: 100px;
-  position: relative;
-}
-
 .table {
   width: 100%;
   border-spacing: 20px;
@@ -55,4 +49,12 @@
   font-weight: bold;
   cursor: pointer;
   margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
 }

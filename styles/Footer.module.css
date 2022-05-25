@@ -32,3 +32,34 @@
 .moto {
   color: rgb(211, 201, 201);
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    height: auto;
+  }
+  .item:first-child {
+    display: none;
+  }
+
+  .item:last-child {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 20px 0;
+  }
+
+  .text {
+    margin: 15px 0;
+  }
+
+  .card:first-child {
+    display: none;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}

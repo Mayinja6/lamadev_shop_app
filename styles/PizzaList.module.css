@@ -45,3 +45,31 @@
   text-align: center;
   color: #777;
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .desc {
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .Pizzacard_container {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .Pizzacard_title {
+    font-size: 30px;
+  }
+  .Pizzacard_price,
+  .Pizzacard_desc {
+    font-size: 24px;
+  }
+}

@@ -6,41 +6,46 @@ const Cart = () => {
     <div className={styles.container}>
       <div className={styles.left}>
         <table className={styles.table}>
-          <tr className={styles.tr}>
-            <th>Product</th>
-            <th>Name</th>
-            <th>Extras</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-          </tr>
-          <tr>
-            <td>
-              <div className={styles.imgContainer}>
+          <thead>
+            <tr className={styles.tr}>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Extras</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
                 <Image
+                  className={styles.imgContainer}
                   src="/img/pizza.png"
-                  layout="fill"
-                  objectFit="cover"
+                  width={100}
+                  height={100}
                   alt=""
                 />
-              </div>
-            </td>
-            <td>
-              <span className={styles.name}>CARSIOANI</span>
-            </td>
-            <td>
-              <span className={styles.extras}>Spicy Ginger, Spicy Salmond</span>
-            </td>
-            <td>
-              <span className={styles.price}>$19.9</span>
-            </td>
-            <td>
-              <span className={styles.quantity}>2</span>
-            </td>
-            <td>
-              <span className={styles.total}>$38.40</span>
-            </td>
-          </tr>
+              </td>
+              <td>
+                <span className={styles.name}>CARSIOANI</span>
+              </td>
+              <td>
+                <span className={styles.extras}>
+                  Spicy Ginger, Spicy Salmond
+                </span>
+              </td>
+              <td>
+                <span className={styles.price}>$19.9</span>
+              </td>
+              <td>
+                <span className={styles.quantity}>2</span>
+              </td>
+              <td>
+                <span className={styles.total}>$38.40</span>
+              </td>
+            </tr>
+          </tbody>
         </table>
       </div>
       <div className={styles.right}>
